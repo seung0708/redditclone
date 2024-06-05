@@ -1,0 +1,22 @@
+/* src/styles/GridOverlay.css */
+.grid-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    pointer-events: none; /* Allows clicks to pass through */
+    z-index: 9999; /* Ensures the overlay is on top */
+   
+  }
+  
+  .grid-overlay::before {
+    content: '';
+    display: block;
+    height: 100%;
+    width: 100%;
+    background-image: linear-gradient(to right, 
+      rgba(0, 0, 0, 0.1) 1px, transparent 1px);
+    background-size: calc(100% / 12) 100%;
+  }
+  

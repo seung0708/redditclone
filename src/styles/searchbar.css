@@ -1,0 +1,27 @@
+.searchbar {
+    position: relative;
+}
+
+.nav__searchbar {
+    flex: 1;
+    max-width: 25rem;
+    height: 2rem;
+    border-radius: 100px;
+    border: none;
+    background-color: darkgray;
+}
+
+.nav__searchbar::placeholder {
+    color: white;
+}
+
+.nav__searchbar[type=text] {
+    color: white;
+    padding-left: 2.5rem;
+}
+
+.icon {
+    position: fixed;
+    left: 23rem;
+    color: white;
+}
